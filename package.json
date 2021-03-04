@@ -6,13 +6,12 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"client": "cd factusor && npm start",
-		"start": "node server.js",
-		"dev": "concurrently -n 'server,client' -c 'green,yellow' \"nodemon server.js\" \"npm run client\"",
-		"build": "cd factusor && npm run build",
-		"install-client": "cd factusor && npm install",
-		"heroku-postbuild": "npm run install-client && npm run build"
+		"start": "node server.js"
 	},
 	"keywords": [],
+	"engines": {
+		"node": "14.x"
+	  },
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
